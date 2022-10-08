@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/nft.js"></script>
+    <script src="scripts/details.js"></script>
+    <script src="scripts/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-strip">
+        <div>Please link your metamask wallet</div>
+        <div>&#9679;</div>
+        <div>Please link your metamask wallet</div>
+        <div>&#9679;</div>
+        <div>Please link your metamask wallet</div>
+        <div>&#9679;</div>
+        <div>Please link your metamask wallet</div>
+        <div>&#9679;</div>
+        <div>Please link your metamask wallet</div>
+      </div>
+      <div class="header">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Logo image" />
+        </div>
+        <div class="profile">
+          <img src="images/profile_icon.png" alt="Profile icon" />
+          <img
+            src="images/ellipse_green.svg"
+            alt="elliplse icon"
+            class="ellipse_green"
+          />
+        </div>
+      </div>
+      <div class="section section__no-border flex flex-row">
+        <div class="image-view">
+          <img src="images/cover_image.png" alt="Cover image" />
+        </div>
+        <div class="detail-view">
+          <div class="investment_option">
+            <div class="subtitle-text">investment option</div>
+            <div class="investment_name">COMMON SHARE</div>
+          </div>
+          <div>
+            <hr class="hr__1px_solid_white_opacity_2" />
+            <div class="project_details">
+              <div class="project_name">
+                <div class="subtitle-text">project</div>
+                <div class="project_name_value"></div>
+              </div>
+              <div class="owner">
+                <div class="subtitle-text">owned by</div>
+                <div class="owner_name_value"></div>
+              </div>
+              <div class="follow-nft">
+                <img
+                  class="follow-nft-icon"
+                  src="images/follow_nft_frame.svg"
+                  alt="follow nft icon"
+                />
+                <span>Follow NFT</span>
+              </div>
+            </div>
+            <hr class="hr__1px_solid_white_opacity_2" />
+          </div>
+          <div class="sales_details">
+            <div class="sales_details__heading"></div>
+            <hr class="hr__1px_solid_white_opacity_2" />
+            <div class="sales_details__content">
+              <div class="price_and_stock">
+                <div>
+                  <div class="subtitle-text">current price</div>
+                  <div class="price_text"></div>
+                </div>
+                <div>
+                  <div class="subtitle-text">units available</div>
+                  <div class="stock_text"></div>
+                </div>
+              </div>
+              <div class="payment_options">
+                <div class="subtitle-text">select how you want to pay</div>
+                <div class="options_list">
+                  <span class="payment_option">
+                    <img
+                      src="images/stripe_logo_revised_2016_1.svg"
+                      alt="Stripe"
+                    />
+                  </span>
+                  <span class="flex">
+                    <span class="payment_option payment_option__selected"
+                      ><img
+                        src="images/paypal_2014_logo_1.svg"
+                        alt="Paypal" /></span
+                    ><img
+                      class="selected_ellipse"
+                      src="images/selected_ellipse.svg" /><img
+                      class="selected_check"
+                      src="images/selected_check.svg"
+                  /></span>
+                </div>
+              </div>
+              <div class="sales_details__content__declaration">
+                <input type="checkbox" name="declaration" id="declaration" />
+                <span>
+                  <label for="declaration"
+                    >I understand the benefits, terms and risks in buying this
+                    NFT</label
+                  >
+                </span>
+              </div>
+              <div class="payment_actions">
+                <button class="buy_now_button">Buy Now</button>
+                <button class="request_call_back">Request call back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="description" class="section">
+        <div class="section__heading"></div>
+        <hr class="section__hr" />
+        <div class="section__content">
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div
+                id="paragraph_title_description"
+                class="paragraph__title"
+              ></div>
+              <div
+                id="paragraph_content_description"
+                class="paragraph__content"
+              ></div>
+            </div>
+            <img src="images/-.svg" alt="minus icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section__heading">Benefits of Investment</div>
+        <hr class="section__hr" />
+        <div class="section__content">
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div class="paragraph__title">
+                Should we put all four in the description?
+              </div>
+              <div class="paragraph__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus
+                ligula suspendisse dictum sed turpis ante tortor egestas arcu.
+                Morbi at egestas mauris eu at elit phasellus et euismod. Magnis
+                vel est egestas ut.
+              </div>
+            </div>
+            <img src="images/-.svg" alt="minus icon" />
+          </div>
+          <hr class="section__content__hr" />
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div class="paragraph__title">
+                Infographic with icons. Would like more info about e-commerce
+                platforms for books and games.
+              </div>
+            </div>
+            <img src="images/+.svg" alt="minus icon" />
+          </div>
+          <hr class="section__content__hr" />
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div class="paragraph__title">
+                Infographic with icons. Would like more info about e-commerce
+                platforms for books and games.
+              </div>
+            </div>
+            <img src="images/+.svg" alt="minus icon" />
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section__heading">Terms of Investment</div>
+        <hr class="section__hr" />
+        <div class="section__content">
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div class="paragraph__title">
+                Should we put all four in the description?
+              </div>
+              <div class="paragraph__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae delectus molestiae voluptates culpa? Dolor velit
+                animi, eum cum odit error! Ipsam eius accusantium magni
+                repudiandae.
+              </div>
+            </div>
+            <img src="images/-.svg" alt="minus icon" />
+          </div>
+          <hr class="section__content__hr" />
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div class="paragraph__title">
+                Infographic with icons. Would like more info about e-commerce
+                platforms for books and games.
+              </div>
+            </div>
+            <img src="images/+.svg" alt="minus icon" />
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section__heading">Risks of Investment</div>
+        <hr class="section__hr" />
+        <div class="section__content">
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div class="paragraph__title">
+                Should we put all four in the description?
+              </div>
+              <div class="paragraph__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae delectus molestiae voluptates culpa? Dolor velit
+                animi, eum cum odit error! Ipsam eius accusantium magni
+                repudiandae.
+              </div>
+            </div>
+            <img src="images/-.svg" alt="minus icon" />
+          </div>
+          <hr class="section__content__hr" />
+          <div class="paragraph">
+            <div class="paragraph__main">
+              <div class="paragraph__title">
+                Infographic with icons. Would like more info about e-commerce
+                platforms for books and games.
+              </div>
+            </div>
+            <img src="images/+.svg" alt="minus icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section__heading">How to buy</div>
+        <hr class="section__hr" />
+        <div class="section__content section__content__with_image">
+          <div class="section__image"></div>
+          <div>
+            <div class="paragraph">
+              <div class="paragraph__main">
+                <div class="paragraph__title">
+                  Should we put all four in the description?
+                </div>
+                <div class="paragraph__content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae delectus molestiae voluptates culpa? Dolor velit
+                  animi, eum cum odit error! Ipsam eius accusantium magni
+                  repudiandae.
+                </div>
+              </div>
+              <img src="images/-.svg" alt="minus icon" />
+            </div>
+            <hr class="section__content__hr" />
+            <div class="paragraph">
+              <div class="paragraph__main">
+                <div class="paragraph__title">
+                  Infographic with icons. Would like more info about e-commerce
+                  platforms for books and games.
+                </div>
+              </div>
+              <img src="images/+.svg" alt="minus icon" />
+            </div>
+            <hr class="section__content__hr" />
+            <div class="paragraph">
+              <div class="paragraph__main">
+                <div class="paragraph__title">
+                  Infographic with icons. Would like more info about e-commerce
+                  platforms for books and games.
+                </div>
+              </div>
+              <img src="images/+.svg" alt="minus icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section__heading">Stay connected</div>
+        <hr class="section__hr" />
+        <div class="section__content section__content__with_square_box">
+          <div class="section__square_box">
+            <img
+              class="square_box_text_image"
+              src="images/join_discord.png"
+              alt="Join discord"
+            />
+            <div class="social_media_links">
+              <img src="images/discord_icon.svg" alt="Discord logo" />
+            </div>
+          </div>
+          <div class="section__square_box section__square_box__highlighted">
+            <img
+              class="square_box_text_image"
+              src="images/share_link.png"
+              alt="Share link"
+            />
+            <div class="social_media_links">
+              <img src="images/facebook_icon.svg" alt="Facebook" />
+              <img src="images/twitter_icon.svg" alt="Twitter" /><img
+                src="images/instagram_icon.svg"
+                alt="Instagram"
+              />
+            </div>
+          </div>
+          <div class="section__square_box">
+            <img
+              class="square_box_text_image"
+              src="images/explore_on_chain.png"
+              alt="Explore on chain"
+            />
+            <div class="social_media_links">
+              <img
+                class="discord_icon"
+                src="images/right_arrow.svg"
+                alt="Right arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr_gradient" />
+      <div class="section__more_from_project">
+        <div class="section__more_from_project__heading">
+          <span>More from this project</span>
+          <img class="go_left" src="images/go_left.svg" alt="Go left" />
+          <img class="go_right" src="images/go_right.svg" alt="Go right" />
+        </div>
+        <div class="more_projects">
+          <div class="card">
+            <img
+              class="splash_image"
+              src="images/splash_image.png"
+              alt="Splash image"
+            />
+            <div class="owner_info">
+              <img
+                class="profile_image"
+                src="images/profile_image.png"
+                alt="Profile image"
+              />
+              <div class="product_owner_name">
+                <div class="product_name">Lambiyan</div>
+                <div class="owner_name">Owned by - Pallav Bajjuri</div>
+              </div>
+            </div>
+            <div class="sales_info">
+              <span>Price – INR 5,73,000</span>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="splash_image"
+              src="images/splash_image.png"
+              alt="Splash image"
+            />
+            <div class="owner_info">
+              <img
+                class="profile_image"
+                src="images/profile_image.png"
+                alt="Profile image"
+              />
+              <div class="product_owner_name">
+                <div class="product_name">Lambiyan</div>
+                <div class="owner_name">Owned by - Pallav Bajjuri</div>
+              </div>
+            </div>
+            <div class="sales_info">
+              <span>Price – INR 5,73,000</span>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="splash_image"
+              src="images/splash_image.png"
+              alt="Splash image"
+            />
+            <div class="owner_info">
+              <img
+                class="profile_image"
+                src="images/profile_image.png"
+                alt="Profile image"
+              />
+              <div class="product_owner_name">
+                <div class="product_name">Lambiyan</div>
+                <div class="owner_name">Owned by - Pallav Bajjuri</div>
+              </div>
+            </div>
+            <div class="sales_info">
+              <span>Price – INR 5,73,000</span>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="splash_image"
+              src="images/splash_image.png"
+              alt="Splash image"
+            />
+            <div class="owner_info">
+              <img
+                class="profile_image"
+                src="images/profile_image.png"
+                alt="Profile image"
+              />
+              <div class="product_owner_name">
+                <div class="product_name">Lambiyan</div>
+                <div class="owner_name">Owned by - Pallav Bajjuri</div>
+              </div>
+            </div>
+            <div class="sales_info">
+              <span>Price – INR 5,73,000</span>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <img
+            src="images/transparent_gradient.png"
+            class="transparent_gradient"
+          />
+        </div>
+        <button class="view_project_btn">VIEW PROJECT</button>
+      </div>
+      <div class="footer">
+        <span>About</span><span>Terms of Use</span><span>Privacy Policy</span
+        ><span>Knowledge Base</span><span>Customer Support</span>
+      </div>
+    </div>
+  </body>
+</html>

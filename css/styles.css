@@ -1,0 +1,602 @@
+/* Fonts */
+@font-face {
+  font-family: "visby_cf";
+  src: url("fonts/visby-cf/visby_bold-webfont.woff2") format("woff2"),
+    url("fonts/visby-cf/visby_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "visby_cf";
+  src: url("fonts/visby-cf/visby_medium-webfont.woff2") format("woff2"),
+    url("fonts/visby-cf/visby_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "zuume";
+  src: url("fonts/zuume/zuume-medium-webfont.woff2") format("woff2"),
+    url("fonts/zuume/zuume-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "zuume";
+  src: url("fonts/zuume/zuume-bold-webfont.woff2") format("woff2"),
+    url("fonts/zuume/zuume-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* General css */
+body {
+  background: #000000;
+  color: white;
+  font-family: "visby_cf", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
+}
+
+button {
+  font-family: "visby_cf", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle-text {
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+/* Top strip */
+.top-strip {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background: #f61354;
+}
+
+.top-strip div {
+  margin: 9px 11px 8px;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 70px 90px 30px 90px;
+}
+
+.profile .ellipse_green {
+  position: relative;
+  top: -35px;
+  left: -16px;
+}
+
+/* Project details section */
+.project_details .subtitle-text {
+  margin-bottom: 8px;
+}
+
+.image-view {
+  border-radius: 13.5614px;
+  width: 534px;
+  height: 704px;
+}
+
+.image-view img {
+  border-radius: 13.5614px;
+  object-fit: cover;
+  width: 534px;
+  height: 704px;
+}
+
+.detail-view {
+  margin-left: 66px;
+  width: 100%;
+  height: 704px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+}
+
+.investment_name {
+  font-family: "zuume";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  letter-spacing: 6.78641px;
+  margin-top: 5px;
+}
+
+.owner {
+  margin-left: 91px;
+}
+
+.follow-nft {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.follow-nft-icon {
+  height: 24px;
+  width: 24px;
+  margin: 13px;
+}
+
+.sales_details {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 44px;
+}
+
+.sales_details__heading {
+  margin: 23px 97px 16px 35px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sales_details__content {
+  display: flex;
+  flex-direction: column;
+  margin: 11px 35px 40px 35px;
+  font-size: 16px;
+}
+
+.sales_details__content__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 21px;
+  margin-right: 25px;
+}
+
+.sales_details__content__declaration {
+  margin-top: 73px;
+  margin-bottom: 22px;
+}
+
+.units_count_input {
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 74px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.units_count_select,
+.units_count_select:focus {
+  background: none;
+  border: 0;
+  width: 60px;
+  font-family: "zuume";
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  outline: 0;
+  margin: auto;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.units_count_select option {
+  background-color: black;
+}
+
+.investment_amount,
+.processing_fee {
+  font-family: "zuume";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  width: 74px;
+}
+
+.price_and_stock {
+  display: flex;
+  margin-top: 11px;
+  margin-bottom: 60px;
+}
+
+.price_and_stock .subtitle-text,
+.payment_options .subtitle-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-right: 142px;
+  margin-bottom: 8px;
+}
+
+.price_and_stock .price_text,
+.price_and_stock .stock_text {
+  font-family: "zuume";
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 52px;
+}
+
+.payment_options .options_list {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.payment_options .payment_option {
+  margin-right: 55px;
+}
+
+.payment_option__selected {
+  background: url("../images/selected_rectangle.svg");
+  width: 149.14px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected_ellipse {
+  position: relative;
+  top: -21px;
+  left: -69px;
+}
+
+.selected_check {
+  position: relative;
+  top: -21px;
+  left: -89px;
+}
+
+.buy_now_button {
+  background-image: url("../images/payment_button.png");
+  border-radius: 10px;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  height: 56px;
+  padding: 0;
+  width: 174px;
+  margin-right: 20px;
+}
+
+.request_call_back {
+  background: rgba(255, 31, 31, 0.11);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/request_call_back.png");
+  box-sizing: border-box;
+  width: 174px;
+  height: 56px;
+  border-radius: 10px;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: 90px;
+  margin-right: 153px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section__no-border {
+  border: 0px;
+}
+
+.section__heading {
+  margin-left: 70px;
+  margin-right: 195px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+.section__hr {
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+}
+
+.hr__1px_solid_white_opacity_2 {
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+}
+
+.section__content {
+  margin-left: 68px;
+  margin-right: 66px;
+}
+
+.section__content__with_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section__image {
+  min-width: 394px;
+  width: 394px;
+  height: 312px;
+  opacity: 0.5;
+  border: 1px solid #ffffff;
+  margin-right: 45px;
+  margin-top: 71px;
+  margin-bottom: 71px;
+}
+
+.section__content__hr {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 11px;
+}
+
+/* Paragraph used in section */
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  margin-right: 230px;
+  width: 100%;
+}
+
+.paragraph__main {
+  margin-right: 150px;
+}
+
+.paragraph__title {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.paragraph__content {
+  opacity: 0.7;
+
+  font-size: 18px;
+  line-height: 144%;
+}
+
+/* Stay connected section */
+
+.section__content__with_square_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 29px;
+  margin-bottom: 60px;
+}
+
+.section__square_box {
+  width: 342px;
+  height: 342px;
+  min-width: 342px;
+  min-height: 342px;
+  background: #222222;
+  opacity: 0.5;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section__square_box__highlighted {
+  background: #2f2f2f;
+  opacity: 0.6;
+  border: 1px solid #ffffff;
+}
+
+.square_box_text_image {
+  margin-top: 65px;
+  margin-right: 156px;
+  margin-left: 64px;
+}
+
+.social_media_links {
+  margin-bottom: 83px;
+  margin-left: 45px;
+}
+
+.social_media_links img {
+  margin: 0 25px;
+}
+
+.hr_gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  height: 1px;
+  border: 0;
+  margin-left: 53px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+/* More from this project section */
+.section__more_from_project {
+  margin-left: 87px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__more_from_project__heading {
+  display: flex;
+  align-items: center;
+}
+
+.section__more_from_project__heading span {
+  margin-right: 60px;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.section__more_from_project__heading img {
+  margin-right: 9px;
+}
+
+.more_projects {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 64px;
+}
+
+.more_projects .card {
+  width: 286px;
+  height: 330px;
+  background: #121212;
+  border-radius: 16.6285px;
+  margin-right: 28px;
+}
+
+.more_projects .splash_image {
+  width: 257px;
+  height: 175px;
+  margin: 14.5px;
+  border-radius: 11.0857px;
+}
+
+.more_projects .owner_info {
+  display: flex;
+  margin-left: 16.5px;
+  align-items: center;
+}
+
+.more_projects .profile_image {
+  width: 33.26px;
+  height: 33.26px;
+  margin-top: 8px;
+}
+
+.more_projects .product_owner_name {
+  margin-left: 14.5px;
+}
+
+.more_projects .product_name {
+  font-size: 12.4714px;
+  line-height: 19px;
+}
+
+.more_projects .owner_name {
+  font-size: 11.0857px;
+  line-height: 17px;
+}
+
+.more_projects .sales_info {
+  margin-top: 22.5px;
+  margin-left: 14.5px;
+  margin-right: 14.5px;
+  width: 257.74px;
+  height: 45.04px;
+  background: #080808;
+  border-radius: 11.0857px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Heebo", sans-serif;
+}
+
+.more_projects .sales_info span {
+  font-size: 9.69998px;
+  line-height: 14px;
+}
+
+.more_projects .sales_info button {
+  width: 79.68px;
+  height: 29.79px;
+  background: radial-gradient(
+    86.07% 145.35% at 28.05% 86.07%,
+    #3e67ff 0%,
+    #e47298 100%
+  );
+  border-radius: 75.4456px;
+  border: 0;
+  color: #ffffff;
+  font-size: 9.69998px;
+  font-family: "Heebo", sans-serif;
+  line-height: 14px;
+}
+
+.more_projects .transparent_gradient {
+  width: 262px;
+  height: 330px;
+  margin-left: -224px;
+}
+
+.view_project_btn {
+  font-family: "Poppins", sans-serif;
+  align-self: center;
+  box-sizing: border-box;
+  width: 208px;
+  height: 54px;
+  border: 1px solid #ffffff;
+  border-radius: 27px;
+  background: none;
+  color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 105px;
+  margin-bottom: 45px;
+  margin-left: 103px;
+}
+
+.footer span {
+  margin-left: 37px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  opacity: 0.4;
+}
